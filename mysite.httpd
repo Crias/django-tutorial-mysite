@@ -1,0 +1,27 @@
+WSGIPythonPath /home/crias/mysite
+WSGIScriptAlias /mysite /home/crias/mysite/mysite/wsgi.py
+
+Alias /static/polls "/home/crias/django-polls/polls/static/polls"
+<Directory "/home/crias/django-polls/static">
+    Order allow,deny
+    Options Indexes
+    Allow from all
+    IndexOptions FancyIndexing
+</Directory>
+
+Alias /static/admin "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/static/admin"
+<Directory "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/static">
+    Order allow,deny
+    Options Indexes
+    Allow from all
+    IndexOptions FancyIndexing
+</Directory>
+
+Alias /static "/home/crias/mysite/mysite/static"
+<Directory /home/crias/mysite>
+<Files mysite/wsgi.py>
+Order deny,allow
+Allow from all
+</Files>
+</Directory>
+
