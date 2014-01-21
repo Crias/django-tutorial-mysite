@@ -3,7 +3,7 @@ django-tutorial-mysite
 
 MySite is a simple Django Project based on the Django Tutorial at https://docs.djangoproject.com
 
-It uses the [django-tutorial-polls](https://github.com/crias/django-tutorial-polls) application.
+It uses the [tutorial-django-polls](https://github.com/crias/tutorial-django-polls) application.
 
 
 Quick start
